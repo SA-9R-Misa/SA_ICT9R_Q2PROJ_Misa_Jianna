@@ -1,0 +1,39 @@
+ body {
+            background-color: white;
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-repeat: no-repeat; /* Prevent tiling */
+            background-position: center; /* Center the image */
+
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+        img {
+            width: 250px;
+            height: 195px;
+        }
+        h4 {
+            color: whitesmoke;
+        }
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: 300px;
+   
+        }
+        h1 {
+            text-align: center;
+            background-color: #ffcfd2;
+        }
+        p {
+            color: black;
+        }
+        .nav-link:hover {
+            color: #d9b382 !important;
+        }
+        .navbar {
+            background-color: #fbf8cc;

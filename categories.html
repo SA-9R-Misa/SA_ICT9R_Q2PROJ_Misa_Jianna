@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+        }
+        .container {
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+        .navbar {
+            background-color: #fbf8cc;
+        }
+        .navbar-brand, .nav-link {
+            color: black !important;
+        }
+        .nav-link:hover {
+            color: #d9b382 !important;
+        }
+        .recipe-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .recipe-card h5 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        .recipe-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .recipe-card button {
+            background-color: #593811;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 15px;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        .recipe-card button:hover {
+            background-color: #495057;
+        }
+        img {
+            width: 300px;
+            height: 250px;
+        }
+        .row {
+            justify-content: center;
+        }
+        .card {
+        margin-bottom: 20px;
+        }
+        .card-img-top {
+        height: 450px; /* Set a fixed height for images */
+        }
+        h1 {
+            text-align: center;
+            background-color: #f1c0e8;
+        }
+        h5 {
+            text-align: center;
+            background-color: #a3c4f3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Recipe Sharing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="submit.html">Submit Recipe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1> Sweet Tooth Cravings </h1>
+   <h5>Know more about cookie recipes here:<a href="https://theyummybowl.com/dessert/cookie-recipes/" target="_blank">TheYummyBowl</a>.</h5>
+    <!-- Recipe Categories -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_PnJlvbRQVmzjAFZeF5u-xZD4dB4M55IpA&s" class="card-img-top" alt="choco chip cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Chip Cookies</h5>
+                        <p class="card-text">The classic and most basic type of cookie. It is also the easiest and quickest to make.</p>
+                        <button data-bs-toggle="modal" data-bs-target="#recipe1Modal">Recipe &raquo;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://theyummybowl.com/wp-content/uploads/Gluten-Free-Red-Velvet-Cookies-5.jpg" class="card-img-top" alt="red velvet cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Velvet Cookies</h5>
+                        <p class="card-text">Just like the red velvet cake, it is exactly the same but in cookie form! Red food coloring is used to achieve the color.</p>
+                        <button data-bs-toggle="modal" data-bs-target="#recipe2Modal">Recipe &raquo;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://mymessykitchenn.com/wp-content/uploads/2023/09/IMG_9771-scaled.jpg" class="card-img-top" alt="cookies and cream">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookies and Cream</h5>
+                        <p class="card-text">Made with butter and creamcheese with a touch of Oreos.</p>
+                        <button data-bs-toggle="modal" data-bs-target="#recipe3Modal">Recipe &raquo;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDCBpZBL5Zr8mglEh7F3ePEpJZagI9ECbfQ&s" class="card-img-top" alt="smores cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">S'mores Cookies</h5>
+                        <p class="card-text">Gooey and chewy with the addition of marshmallows, graham and melted chocolates.</p>
+                        <button data-bs-toggle="modal" data-bs-target="#recipe4Modal">Recipe &raquo;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPfveU4IsZQYJVd8S6D6NoQqu5j4gnvQQ6w&s" class="card-img-top" alt="birthday cookie">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cookies</h5>
+                        <p class="card-text">Funfetti themed cookie made with white chocolate and sprinkles.</p>
+                        <button data-bs-toggle="modal" data-bs-target="#recipe5Modal">Recipe &raquo;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv7E9Tzds_U30jKXPQK7jyq0ul1xmNbpiSw36OASB_97SsgkZ46qvCHZ6xqz079kZrbic&usqp=CAU" class="card-img-top" alt="strawberry cookie">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Cookies</h5>
+                        <p class="card-text">Cookies added with strawberries and white chocolate chips which are perfect for events like Valentines day.</p>
+                        <button data-bs-toggle="modal" data-bs-target="#recipe6Modal">Recipe &raquo;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Recipe Modals -->
+    <!-- Modal Content for each recipe -->
+    <div class="modal fade" id="recipe1Modal" tabindex="-1" aria-labelledby="recipe1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe1Label">Chocolate Chip Cookies Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_PnJlvbRQVmzjAFZeF5u-xZD4dB4M55IpA&s" class="img" alt="choco chips cookie">
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>AP Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Salt</li>
+                        <li>Butter</li>
+                        <li>Brown and White sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Chocolate Chips</li>
+                    </ul>
+                    <p>Steps:</p>
+                    <ol>
+                        <li>Prepare the dough, mix both dry and wet ingredients.</li>
+                        <li>Shape the dough and put in on baking pan that is oiled or greased.</li>
+                        <li>Preheat the oven and bake the cookies at 350°F (175°C) for about 8-12 minutes.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="recipe2Modal" tabindex="-1" aria-labelledby="recipe2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe2Label">Red Velvet Cookies Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://theyummybowl.com/wp-content/uploads/Gluten-Free-Red-Velvet-Cookies-5.jpg" class="img" alt="red velvet cookies">
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>AP Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Salt</li>
+                        <li>Butter</li>
+                        <li>Brown and White sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Cocoa Powder</li>
+                        <li>Red food coloring</li>
+                        <li>Buttermilk</li>
+                        <li>White chocolate chips (optional)</li>
+                    </ul>
+                    <p>Steps:</p>
+                    <ol>
+                        <li>Prepare the dough, mix both dry and wet ingredients.</li>
+                        <li>Shape the dough and put in on baking pan that is oiled or greased.</li>
+                        <li>Preheat the oven and bake the cookies at 350°F (175°C) for about 8-12 minutes.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="recipe3Modal" tabindex="-1" aria-labelledby="recipe3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe3Label">Cookies and Cream Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://mymessykitchenn.com/wp-content/uploads/2023/09/IMG_9771-scaled.jpg" class="img" alt="cookies and cream">
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>AP Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Salt</li>
+                        <li>Butter</li>
+                        <li>Brown and White sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Oreos</li>
+                    </ul>
+                    <p>Steps:</p>
+                    <ol>
+                        <li>Prepare the dough, mix both dry and wet ingredients.</li>
+                        <li>Shape the dough and put in on baking pan that is oiled or greased.</li>
+                        <li>Preheat the oven and bake the cookies at 350°F (175°C) for about 8-12 minutes.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="recipe4Modal" tabindex="-1" aria-labelledby="recipe4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe4Label">S'mores Cookies Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDCBpZBL5Zr8mglEh7F3ePEpJZagI9ECbfQ&s" class="img" alt="s'mores cookies">
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>AP Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Salt</li>
+                        <li>Butter</li>
+                        <li>Brown and White sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Marshmallows</li>
+                        <li>Chocolate</li>
+                        <li>Graham</li>
+                    </ul>
+                    <p>Steps:</p>
+                    <ol>
+                        <li>Prepare the dough, mix both dry and wet ingredients.</li>
+                        <li>Shape the dough and put in on baking pan that is oiled or greased.</li>
+                        <li>Preheat the oven and bake the cookies at 350°F (175°C) for about 8-12 minutes.</li>
+                       
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="recipe5Modal" tabindex="-1" aria-labelledby="recipe5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe5Label">Birthday Cookie Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPfveU4IsZQYJVd8S6D6NoQqu5j4gnvQQ6w&s" class="img" alt="Birthday cookie">
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>AP Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Salt</li>
+                        <li>Butter</li>
+                        <li>Brown and White sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Rainbow sprinkles</li>
+                        <li>White/Chocolate chips</li>
+                    </ul>
+                        <p>Steps:</p>
+                    <ol>
+                        <li>Prepare the dough, mix both dry and wet ingredients.</li>
+                        <li>Shape the dough and put in on baking pan that is oiled or greased.</li>
+                        <li>Preheat the oven and bake the cookies at 350°F (175°C) for about 8-12 minutes.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="recipe6Modal" tabindex="-1" aria-labelledby="recipe6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe6Label">Strawberry Cookie Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv7E9Tzds_U30jKXPQK7jyq0ul1xmNbpiSw36OASB_97SsgkZ46qvCHZ6xqz079kZrbic&usqp=CAU" class="img" alt="strawberry cookie">
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>AP Flour</li>
+                        <li>Baking Soda</li>
+                        <li>Salt</li>
+                        <li>Butter</li>
+                        <li>Brown and White sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla Extract</li>
+                        <li>Strawberry powder or the fruit</li>
+                        <li>Yogurt/Sour Cream</li>
+                        <li>White chocolate chips (optional)</li>
+                       
+                    </ul>
+                    <p>Steps:</p>
+                    <ol>
+                        <li>Prepare the dough, mix both dry and wet ingredients.</li>
+                        <li>Shape the dough and put in on baking pan that is oiled or greased.</li>
+                        <li>Preheat the oven and bake the cookies at 350°F (175°C) for about 8-12 minutes.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
